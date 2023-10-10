@@ -47,12 +47,12 @@ public class Piece : MonoBehaviour
 
 
         //controls
-        if (Input.GetKeyDown(KeyCode.A)) {
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) {
             Move(Vector2Int.left);
-        } else if (Input.GetKeyDown(KeyCode.D)) {
+        } else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
             Move(Vector2Int.right);
         }
-        if (Input.GetKeyDown(KeyCode.S)){
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)){
             Move(Vector2Int.down);
         }
         if (Input.GetKeyDown(KeyCode.Space)){
