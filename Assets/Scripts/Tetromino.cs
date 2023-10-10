@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public enum Tetromino
-{
+{//set the shapes of the pieces
     I,
     O,
     T,
@@ -13,7 +13,7 @@ public enum Tetromino
 }
 [System.Serializable]
 public struct TetrominoData
-{
+{//builds the tetromino
     public Tetromino tetromino;
     public Tile tile;
     public Vector2Int[] cells { get; private set; }

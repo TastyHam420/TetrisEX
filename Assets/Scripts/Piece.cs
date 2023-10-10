@@ -7,13 +7,15 @@ public class Piece : MonoBehaviour
     public Vector3Int[] cells { get; private set; }
     public Vector3Int position { get; private set; }
     public int rotationIndex { get; private set; }
+    // difficulty paramiters you can change them in the config
     public float stepDelay = 1.0f;
     public float lockDelay = 0.5f;
     
     private float stepTime;
     private float lockTime;
+    
     public void Initialize(Board board, Vector3Int position, TetrominoData data)
-    {
+    {//set up the game
         this.board = board;
         this.position = position;
         this.data = data;
@@ -44,7 +46,7 @@ public class Piece : MonoBehaviour
         }
 
 
-
+        //controls
         if (Input.GetKeyDown(KeyCode.A)) {
             Move(Vector2Int.left);
         } else if (Input.GetKeyDown(KeyCode.D)) {
@@ -64,7 +66,7 @@ public class Piece : MonoBehaviour
         this.board.Set(this);
     }
     private void Step()
-    {
+    {//stepping and locking
         this.stepTime = Time.time + this.stepDelay;
 
         Move(Vector2Int.down);
@@ -76,7 +78,7 @@ public class Piece : MonoBehaviour
    
 
     private void HardDrop()
-    {
+    {// when you press space it intsantly drops the piece
         while (Move(Vector2Int.down)){
             continue;
         }
@@ -96,7 +98,7 @@ public class Piece : MonoBehaviour
 
         bool valid = this.board.IsValidPosition(this, newPosition);
         if(valid)
-        {
+        {//checks to see if piece is in the bourd
           this.position = newPosition;
           this.lockTime = 0f;
         }
@@ -105,7 +107,7 @@ public class Piece : MonoBehaviour
     }
 
     private void Rotate(int direction)
-    {
+    {//rotateing the pieces
         int originalRotation = this.rotationIndex;
         this.rotationIndex = Wrap(this.rotationIndex + direction, 0, 4);
 
@@ -118,7 +120,7 @@ public class Piece : MonoBehaviour
         }
     }
     private void ApplyRotationMatrix(int direction)
-    {
+    {//allows the pieces to rotate correctly
          for (int i = 0; i < this.cells.Length; i++)
         {
             Vector3 cell = this.cells[i];
@@ -145,7 +147,7 @@ public class Piece : MonoBehaviour
         }
     }
     private bool TestWallKicks(int rotationIndex, int rotationDirection)
-    {
+    {//"wall kick" is then the piece turns and does not go out of bounds
         int wallKickIndex = GetWallKickIndex(rotationIndex, rotationDirection);
 
         for (int i = 0; i < this.data.wallKicks.GetLength(1); i++)

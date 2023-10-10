@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
-
+// the ghost is the phantom piece that tells the player where their piece is going to land
 public class Ghost : MonoBehaviour
 {
     public Tile tile;
