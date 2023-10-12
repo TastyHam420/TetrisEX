@@ -7,7 +7,8 @@ public class Board : MonoBehaviour
     public TetrominoData[] tetrominoes;
     public Vector3Int spawnPosition;
     public Vector2Int boardSize = new Vector2Int(10, 20);
-
+    public Gameover GameOverScreen; 
+    public int maxPlatform = 0;
     public RectInt Bounds
     {
         get{
@@ -48,8 +49,9 @@ public class Board : MonoBehaviour
     }
     public void GameOver()
     {
-        this.tilemap.ClearAllTiles();
-        //call gameover screen
+        GameOverScreen.Setup(maxPlatform);
+        //this.tilemap.ClearAllTiles();
+        
     }
 
 
