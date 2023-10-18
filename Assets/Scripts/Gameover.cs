@@ -1,18 +1,25 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Gameover : MonoBehaviour
 {
-    //public Board board { get; private set; }
-    
+    public Board board; 
+    public Text pointsText;
+
     public void Setup(int score) { 
         gameObject.SetActive(true);
-        //this.tilemap.ClearAllTiles(); this should wipe all pieces on the board but i've had issues will pulling from Board.cs
+        pointsText.text = score.ToString() + " Points";
+        
     }
     
     public void RestartButton() {
         SceneManager.LoadScene("Tetris");
 
+    }
+
+    public void MainMenuButton() {
+        SceneManager.LoadScene("MainMenu");
     }
     
 }

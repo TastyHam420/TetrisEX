@@ -7,8 +7,9 @@ public class Board : MonoBehaviour
     public TetrominoData[] tetrominoes;
     public Vector3Int spawnPosition;
     public Vector2Int boardSize = new Vector2Int(10, 20);
-    public Gameover GameOverScreen; 
-    public int maxPlatform = 0;
+    public Gameover GameOverScreen;
+    //bool gActivate;
+    int maxTetris = 5;
     public RectInt Bounds
     {
         get{
@@ -28,7 +29,7 @@ public class Board : MonoBehaviour
     }
 
     private void Start()
-    {
+    {   //gActivate = false;
         SpawnPiece();
     }
 
@@ -42,16 +43,15 @@ public class Board : MonoBehaviour
         if (IsValidPosition(activePiece, spawnPosition)) {
             Set(this.activePiece);
         } else {
-            GameOver();
+            GameOver();            
         }
 
 
     }
     public void GameOver()
     {
-        GameOverScreen.Setup(maxPlatform);
-        //this.tilemap.ClearAllTiles();
-        
+        GameOverScreen.Setup(maxTetris);
+        this.tilemap.ClearAllTiles();
     }
 
 
