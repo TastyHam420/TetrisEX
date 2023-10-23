@@ -10,6 +10,7 @@ public class Gameover : MonoBehaviour
     public void Setup(int score) { 
         gameObject.SetActive(true);
         pointsText.text = score.ToString() + " Points";
+
         
     }
     
@@ -23,3 +24,4 @@ public class Gameover : MonoBehaviour
     }
     
 }
+
