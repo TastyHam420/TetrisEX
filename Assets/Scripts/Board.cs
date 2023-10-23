@@ -119,7 +119,7 @@ public class Board : MonoBehaviour
     public void GameOver()
     {
         tilemap.ClearAllTiles();
-        GameOverScreen.Setup(maxTetris);
+        //GameOverScreen.Setup(maxTetris);
         // Do anything else you want on game over here..
     }
 
