@@ -10,7 +10,7 @@ public class Piece : MonoBehaviour
     // difficulty paramiters you can change them in the config
     public float stepDelay = 1.0f;
     public float lockDelay = 0.5f;
-    
+
     private float stepTime;
     private float lockTime;
     
