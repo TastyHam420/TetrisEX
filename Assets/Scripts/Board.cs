@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class Board : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Board : MonoBehaviour
     public Piece activePiece { get; private set; }
     public Piece nextPiece { get; private set; }
     public Piece savedPiece { get; private set; }
+    public Text boardText;
     public int maxTetris = 0;
 
     public TetrominoData[] tetrominoes;
@@ -120,6 +122,7 @@ public class Board : MonoBehaviour
     {
         tilemap.ClearAllTiles();
         GameOverScreen.Setup(maxTetris);
+        
         // Do anything else you want on game over here..
     }
 
@@ -202,6 +205,7 @@ public class Board : MonoBehaviour
     public void LineClear(int row)
     {
         RectInt bounds = Bounds;
+        boardText.text = maxTetris.ToString() + " Points";
 
         // Clear all tiles in the row
         for (int col = bounds.xMin; col < bounds.xMax; col++)
@@ -223,6 +227,7 @@ public class Board : MonoBehaviour
             }
 
             row++;
+            maxTetris += 50;
         }
     }
 
