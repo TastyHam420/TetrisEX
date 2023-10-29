@@ -39,6 +39,8 @@ public class Board : MonoBehaviour
         savedPiece = gameObject.AddComponent<Piece>();
         savedPiece.enabled = false;
 
+    
+
         for (int i = 0; i < tetrominoes.Length; i++) {
             tetrominoes[i].Initialize();
         }
@@ -47,7 +49,7 @@ public class Board : MonoBehaviour
     private void Start()
     {
         SetNextPiece();
-        SpawnPiece();
+        SpawnPiece(); 
     }
 
     private void SetNextPiece()
@@ -120,9 +122,10 @@ public class Board : MonoBehaviour
 
     public void GameOver()
     {
+        activePiece.enabled = false;
+        Clear(activePiece);
         tilemap.ClearAllTiles();
         GameOverScreen.Setup(maxTetris);
-        
         // Do anything else you want on game over here..
     }
 

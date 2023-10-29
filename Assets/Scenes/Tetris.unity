@@ -982,9 +982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4244151923c1548860ce7afccb3416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  board: {fileID: 0}
   pointsText: {fileID: 2068614898}
-  boardText: {fileID: 1392874905}
 --- !u!1 &991524720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,9 +1679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4244151923c1548860ce7afccb3416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  board: {fileID: 0}
   pointsText: {fileID: 2068614898}
-  boardText: {fileID: 0}
 --- !u!114 &1391548999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1734,7 +1730,7 @@ GameObject:
   - component: {fileID: 1392874906}
   - component: {fileID: 1392874905}
   m_Layer: 5
-  m_Name: next
+  m_Name: points(board)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2310,7 +2306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverScreen: {fileID: 741973224}
-  boardText: {fileID: 0}
+  boardText: {fileID: 1392874905}
   maxTetris: 0
   tetrominoes:
   - tetromino: 0
