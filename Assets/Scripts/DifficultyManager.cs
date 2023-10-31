@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public float difficulty = 1.0f;
+
 public class DifficultyManager : MonoBehaviour
 {
     public float easyStepDelay = 1.0f;
@@ -13,34 +15,35 @@ public class DifficultyManager : MonoBehaviour
     private void Start()
     {
         // Set the initial difficulty to the default (easy)
-        SetDifficulty(Difficulty.Easy);
+        difficulty = hardStepDelay;
+        SetDifficulty(difficulty);
     }
-
-    public enum Difficulty
+    
+    public enum difficulty
     {
         Easy,
         Medium,
         Hard
     }
 
-    public void SetDifficulty(Difficulty difficulty)
+    public void SetDifficulty(difficulty)
     {
         // Update the step delay based on the selected difficulty
         switch (difficulty)
         {
             case Difficulty.Easy:
-                currentStepDelay = easyStepDelay;
+                currentStepDelay = difficulty;
                 break;
             case Difficulty.Medium:
-                currentStepDelay = mediumStepDelay;
+                currentStepDelay = difficulty;
                 break;
             case Difficulty.Hard:
-                currentStepDelay = hardStepDelay;
-                break;
+                currentStepDelay = difficulty;
+                break; 
         }
 
         // Apply the new step delay value
-        UpdatePieceStepDelay();
+        // UpdatePieceStepDelay();
     }
 
     //Manually defining difficulty
