@@ -7,6 +7,7 @@ public class DifficultyManager : MonoBehaviour
     public float easyStepDelay = 1.0f;
     public float mediumStepDelay = 0.5f;
     public float hardStepDelay = 0.2f;
+   
 
     private float currentStepDelay;
 
@@ -14,6 +15,7 @@ public class DifficultyManager : MonoBehaviour
     {
         // Set the initial difficulty to the default (easy)
         SetDifficulty(Difficulty.Easy);
+        
     }
 
     public enum Difficulty
@@ -59,10 +61,13 @@ public class DifficultyManager : MonoBehaviour
         SetDifficulty(Difficulty.Hard);
     }
 
+
+   
     private void UpdatePieceStepDelay()
     {
         // Assuming you have a reference to game object
         Piece piece = FindObjectOfType<Piece>();
+        
 
         if (piece != null)
         {

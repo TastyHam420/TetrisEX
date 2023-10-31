@@ -11,7 +11,6 @@ public class Gameover : MonoBehaviour
 
     public void Setup(int score) { 
         gameObject.SetActive(true);
-        //SceneManager.LoadScene("gameover");
         pointsText.text = score.ToString() + " Points";
         
                 
