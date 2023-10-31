@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4cbe110068b45fb4ab78f038c317186f
+guid: 7c4c39d8ba3fe4c4fbc4e5d861df6a11
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 65
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,190 +110,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tetristilemap(1)_0
+      name: GameBoyBlocks_0
       rect:
         serializedVersion: 2
-        x: 145
-        y: 5
-        width: 65
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f5fc87790aa1f14b9482e210b939ac9
-      internalID: 1740958729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tetristilemap(1)_1
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 5
-        width: 65
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb632fd9a75403847a2f03203ee649b8
-      internalID: -19576183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tetristilemap(1)_2
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 6
-        width: 65
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 900e3280e8117d24f9ed0aa68ab8a893
-      internalID: -1657242104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tetristilemap(1)_3
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 73
-        width: 65
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2fc0bd382a86ca14e9885b82b94c0870
-      internalID: -37969979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tetristilemap(1)_4
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 73
-        width: 65
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: feb1feb85b0fc374d8f02a8a145c4d51
-      internalID: 566453942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tetristilemap(1)_5
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 73
-        width: 65
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd98993ecd0a9344d8247aaf03729008
-      internalID: 686874124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tetristilemap(1)_6
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 73
-        width: 65
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 865f9208955abc849ae9b8538b0248e4
-      internalID: -150562340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tetristilemap(1)_7
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 73
-        width: 65
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3eef1261435bbad43a4f6d887d60a412
-      internalID: 8308723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tetristilemap(1)_8
-      rect:
-        serializedVersion: 2
-        x: 8
+        x: 75
         y: 143
         width: 65
         height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8646d92872691c141b9dcdc255eb67d5
-      internalID: -1491617217
+      spriteID: e4a124b28f4984e43836435c1de1b3ae
+      internalID: 174306528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameBoyBlocks_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 73
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea42a09e85d5be349865f2351f0f015b
+      internalID: -1503150398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameBoyBlocks_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 73
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd9fd6577edac043b8557fb7eaa9acb
+      internalID: 585765718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameBoyBlocks_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 5
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206aafafb0113634290032faf6f99d98
+      internalID: 1652976748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameBoyBlocks_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 6
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7aea2395262bfe48bb002ce828f8b93
+      internalID: 2040212603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameBoyBlocks_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 73
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4ea87cb17db5345b9d8b70531ba460
+      internalID: -573571498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameBoyBlocks_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 143
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dc3e716c52b274385cb791bcfa2ab9
+      internalID: -1076614975
       vertices: []
       indices: 
       edges: []
@@ -309,15 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tetristilemap(1)_0: 1740958729
-      tetristilemap(1)_1: -19576183
-      tetristilemap(1)_2: -1657242104
-      tetristilemap(1)_3: -37969979
-      tetristilemap(1)_4: 566453942
-      tetristilemap(1)_5: 686874124
-      tetristilemap(1)_6: -150562340
-      tetristilemap(1)_7: 8308723
-      tetristilemap(1)_8: -1491617217
+      GameBoyBlocks_0: 174306528
+      GameBoyBlocks_1: -1503150398
+      GameBoyBlocks_2: 585765718
+      GameBoyBlocks_3: 1652976748
+      GameBoyBlocks_4: 2040212603
+      GameBoyBlocks_5: -573571498
+      GameBoyBlocks_6: -1076614975
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
