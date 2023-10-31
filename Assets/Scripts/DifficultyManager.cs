@@ -61,12 +61,13 @@ public class DifficultyManager : MonoBehaviour
 
     private void UpdatePieceStepDelay()
     {
-        // Assuming you have a reference to game object
+        // Reference to game object?
         Piece piece = FindObjectOfType<Piece>();
 
         if (piece != null)
         {
             piece.stepDelay = currentStepDelay;
+            Debug.Log("Updated Tetromino step delay to: " + currentStepDelay);
         }
         else
         {
