@@ -18,7 +18,6 @@ public class Gameover : MonoBehaviour
     
     public void RestartButton() {
         SceneManager.LoadScene("Tetris");
-        Debug.Log("restart");
 
     }
 

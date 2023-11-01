@@ -1,4 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Piece : MonoBehaviour
 {
@@ -22,6 +26,7 @@ public class Piece : MonoBehaviour
         this.rotationIndex = 0;
         this.stepTime = Time.time + this.stepDelay;
         this.lockTime = 0f;
+        
 
 
         if (this.cells == null) {
@@ -75,7 +80,28 @@ public class Piece : MonoBehaviour
            Lock(); 
         }
     }
-   
+   //this needs some work
+    /*public void easyDif()
+    {
+        board.activePiece.stepDelay = 2f;
+        SceneManager.LoadScene("Tetris");
+        Debug.Log("easy");
+    }
+
+    public void midDif(){
+        board.activePiece.stepDelay = 1f;
+        SceneManager.LoadScene("Tetris");
+    }
+
+    public void hardDif(){
+        board.activePiece.stepDelay = 0.5f;
+        SceneManager.LoadScene("Tetris");
+    }*/
+
+
+
+
+
 
     private void HardDrop()
     {// when you press space it intsantly drops the piece
