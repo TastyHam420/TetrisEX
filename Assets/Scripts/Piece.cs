@@ -12,11 +12,26 @@ public class Piece : MonoBehaviour
     public Vector3Int position { get; private set; }
     public int rotationIndex { get; private set; }
     // difficulty paramiters you can change them in the config
-    public float stepDelay = 1.0f;
-    public float lockDelay = 0.5f;
+    //public float stepDelay = 1.0f;
+    //public float lockDelay = 0.5f;
+    //default paramiters
+    public static float DefaultStepDelay = 1f;
+    public static float DefaultMoveDelay = 0.1f;
+    public static float DefaultLockDelay = 0.5f;
+
+    private float stepDelay;
+    private float moveDelay;
+    private float lockDelay;
 
     private float stepTime;
     private float lockTime;
+
+    private void Awake()
+    {
+        stepDelay = DefaultStepDelay;
+        moveDelay = DefaultMoveDelay;
+        lockDelay = DefaultLockDelay;
+    }
     
     public void Initialize(Board board, Vector3Int position, TetrominoData data)
     {//set up the game
@@ -80,23 +95,7 @@ public class Piece : MonoBehaviour
            Lock(); 
         }
     }
-   //this needs some work
-    /*public void easyDif()
-    {
-        board.activePiece.stepDelay = 2f;
-        SceneManager.LoadScene("Tetris");
-        Debug.Log("easy");
-    }
 
-    public void midDif(){
-        board.activePiece.stepDelay = 1f;
-        SceneManager.LoadScene("Tetris");
-    }
-
-    public void hardDif(){
-        board.activePiece.stepDelay = 0.5f;
-        SceneManager.LoadScene("Tetris");
-    }*/
 
 
 

@@ -10,18 +10,17 @@ public class Difficulty : MonoBehaviour
     
     public void easyDifficulty()
     {
-        board.activePiece.stepDelay = 2f;
+        Piece.DefaultStepDelay = 2f;
         SceneManager.LoadScene("Tetris");
-        Debug.Log("easy");
     }
 
     public void midDifficulty(){
-        board.activePiece.stepDelay = 1f;
+        Piece.DefaultStepDelay = 1f;
         SceneManager.LoadScene("Tetris");
     }
 
     public void hardDifficulty(){
-        board.activePiece.stepDelay = 0.5f;
+        Piece.DefaultStepDelay = 0.5f;
         SceneManager.LoadScene("Tetris");
     }
 
