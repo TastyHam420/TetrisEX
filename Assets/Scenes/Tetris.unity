@@ -2310,19 +2310,19 @@ MonoBehaviour:
   maxTetris: 0
   tetrominoes:
   - tetromino: 0
-    tile: {fileID: 11400000, guid: f9b6631cc340a654794c241f2b6d1d0f, type: 2}
+    tile: {fileID: 11400000, guid: 9c0d2f9c5f75b9e4aa16c7f0ae3bed14, type: 2}
   - tetromino: 1
-    tile: {fileID: 11400000, guid: 5f317c74a04e21442ab991e99de8b81f, type: 2}
+    tile: {fileID: 11400000, guid: 41d6d2ddb96091948b4c1e40c61e7476, type: 2}
   - tetromino: 2
-    tile: {fileID: 11400000, guid: 7e0084a4d0400d74ebf7b6893151d61f, type: 2}
+    tile: {fileID: 11400000, guid: 6e730caff93713946a5eb68812faeb44, type: 2}
   - tetromino: 3
-    tile: {fileID: 11400000, guid: 0308be0d5d3c9a1409117c0319b94f5a, type: 2}
+    tile: {fileID: 11400000, guid: 465e707a638033748a2a2adf1a9dd09f, type: 2}
   - tetromino: 4
-    tile: {fileID: 11400000, guid: b950aa963a9ef1847981aad275be37d6, type: 2}
+    tile: {fileID: 11400000, guid: 08d1b91db14980c4ab090a5f78c1e369, type: 2}
   - tetromino: 5
-    tile: {fileID: 11400000, guid: cbaddc0e3d946594caf623a85cbf0987, type: 2}
+    tile: {fileID: 11400000, guid: b02e17ff74818fa4dac984282a5fd67d, type: 2}
   - tetromino: 6
-    tile: {fileID: 11400000, guid: 284eb1771bc08444cbbb7cc0114c907d, type: 2}
+    tile: {fileID: 11400000, guid: 742dba607b2d611489e7689bfddbb441, type: 2}
   boardSize: {x: 10, y: 20}
   spawnPosition: {x: -1, y: 8, z: 0}
   previewPosition: {x: -10, y: 4, z: 0}
@@ -2367,8 +2367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48f9d9de2eece244be3b0e37eff08f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stepDelay: 1
-  lockDelay: 0.5
 --- !u!114 &1683014448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,9 +2379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fb25ce2ceff2f4d96a62629901a856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easyStepDelay: 1
-  mediumStepDelay: 0.5
-  hardStepDelay: 0.2
 --- !u!1 &1828168768
 GameObject:
   m_ObjectHideFlags: 0
